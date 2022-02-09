@@ -1,9 +1,10 @@
-import ReactDom from "react-dom";
-import React from 'react'
-import './index.css'
-import ComParametro from "./components/basicos/ComParametro"
-import Primeiro from './components/basicos/Primeiro'
+import ReactDom from "react-dom";//importa o dom do react
+import './index.css'//importa o arquivo de estilos 
 
+import App from './App'
+
+/*Primeiro param do render é o código que será gerado na página, 
+e o segundo é o local em que o codígo será injetado*/
 
 //const el = document.getElementById('root')
 /*ReactDom.render(
@@ -43,18 +44,6 @@ ReactDom.render(
 // )
 
 ReactDom.render(
-    <div>
-        <Primeiro></Primeiro>
-        {/* <ComParametro titulo="ParamTitulo" subtitulo="ParamSubtitulo"/> */}
-        <ComParametro
-            titulo="Situação do Aluno"
-            aluno="Pedro Silva" 
-            nota={9.3}
-         />
-        <ComParametro
-            titulo="Situação do Aluno"
-            aluno="Maria" nota={9.9}
-         />
-    </div>, 
+    <App />,
      document.getElementById('root')
 )
