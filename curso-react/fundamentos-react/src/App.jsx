@@ -1,6 +1,6 @@
 import React from 'react' // import do react
 import ReactDom from 'react-dom'
-
+import './App.css'
 
 //Importam elementos
 import ComParametro from "./components/basicos/ComParametro"
@@ -11,9 +11,10 @@ import Card from './components/layout/Card'
 
 
 export default _ =>
-    <div id='app'>
+    <div className='App'>
         <h1>Fundamentos React 2</h1>
 
+        <div className='Cards'>
         <Card titulo="#04 - Desafio Aleatório">
             <Aleatorio min={20} max={40} />
         </Card>
@@ -33,6 +34,9 @@ export default _ =>
         <Card titulo="#01 - Primeiro Componente">
             <Primeiro></Primeiro>
         </Card>
+
+        </div>
+        
 
 
     </div>
