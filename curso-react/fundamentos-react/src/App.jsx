@@ -4,7 +4,8 @@ import './App.css'
 
 //Importam elementos
 import Card from './components/layout/Card'
-
+import ParOuImpar from './components/condicional/ParOuImpar'
+import TabelaProdutos from "./components/repeticao/TabelaProdutos"
 import ListaAlunos from './components/repeticao/ListaAluno'
 import Familia from './components/basicos/Familia'
 import FamiliaMembro from './components/basicos/FamiliaMembro'
@@ -19,6 +20,17 @@ export default _ =>
         <h1>Fundamentos React 2</h1>
 
         <div className='Cards'>
+
+            <Card titulo="#08 - Redenrização condicional" color='blue'>
+                <ParOuImpar numero={2}></ParOuImpar>
+                <ParOuImpar numero={1}></ParOuImpar>
+                <ParOuImpar numero={18}></ParOuImpar>
+                <br></br>
+            </Card>
+
+            <Card titulo="#07 - Desafio-Repetição" color="grey">
+                <TabelaProdutos></TabelaProdutos>
+            </Card>
             <Card titulo="#06 - Repetição" color="purple">
                 <ListaAlunos></ListaAlunos>
             </Card>
@@ -26,9 +38,9 @@ export default _ =>
             <Card titulo="#05 - Componentes com filhos" color="blue">
                 <Familia sobrenome="Ferreira">
                     {/* Passa outos componentes  para a tag familia, como children*/}
-                    <FamiliaMembro nome="Lucas"  />
+                    <FamiliaMembro nome="Lucas" />
                     <FamiliaMembro nome="Rafael" />
-                    <FamiliaMembro nome="João"/>
+                    <FamiliaMembro nome="João" />
                 </Familia>
             </Card>
 
