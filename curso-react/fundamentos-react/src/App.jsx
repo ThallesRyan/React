@@ -4,6 +4,10 @@ import './App.css'
 
 //Importam elementos
 import Card from './components/layout/Card'
+
+import UseStateEx from './components/UseStateEx'
+import IndiretaPai from "./components/comunicacao/IndiretaPai"
+import DiretaPai from './components/comunicacao/DiretaPai'
 import ParOuImpar from './components/condicional/ParOuImpar'
 import TabelaProdutos from "./components/repeticao/TabelaProdutos"
 import ListaAlunos from './components/repeticao/ListaAluno'
@@ -20,6 +24,20 @@ export default _ =>
         <h1>Fundamentos React 2</h1>
 
         <div className='Cards'>
+
+            <Card titulo="Exemplo de UseState">
+                <UseStateEx>
+                    
+                </UseStateEx>
+            </Card>
+
+            <Card titulo="#10 - Comunicação Indireta" color="#8BAD39">
+                <IndiretaPai></IndiretaPai>
+            </Card>
+
+            <Card titulo="#09 - Comunicação direta" color="#FFAA">
+                <DiretaPai></DiretaPai>
+            </Card>
 
             <Card titulo="#08 - Redenrização condicional" color='blue'>
                 <ParOuImpar numero={2}></ParOuImpar>
