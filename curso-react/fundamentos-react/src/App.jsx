@@ -5,6 +5,7 @@ import './App.css'
 //Importam elementos
 import Card from './components/layout/Card'
 
+import Input from "./components/formulario/Input"
 import UseStateEx from './components/UseStateEx'
 import IndiretaPai from "./components/comunicacao/IndiretaPai"
 import DiretaPai from './components/comunicacao/DiretaPai'
@@ -22,8 +23,13 @@ import Primeiro from './components/basicos/Primeiro'
 export default _ =>
     <div className='App'>
         <h1>Fundamentos React 2</h1>
-
         <div className='Cards'>
+
+            <Card titulo="#11 - Componente controlado (input)">
+            <Input>
+            </Input>
+
+            </Card>
 
             <Card titulo="Exemplo de UseState">
                 <UseStateEx>
