@@ -5,6 +5,8 @@ import './App.css'
 //Importam elementos
 import Card from './components/layout/Card'
 
+import ContadorClasse2 from "./components/contador/Contador-Classe2"
+import ContadorClasse from "./components/contador/Contador-Classe"
 import Input from "./components/formulario/Input"
 import UseStateEx from './components/UseStateEx'
 import IndiretaPai from "./components/comunicacao/IndiretaPai"
@@ -24,6 +26,15 @@ export default _ =>
     <div className='App'>
         <h1>Fundamentos React 2</h1>
         <div className='Cards'>
+
+            <Card titulo="#13 - Contador Usando Classe - 2" color="#DC143C">
+                <ContadorClasse2 numeroInicial={10}></ContadorClasse2>
+            </Card>
+
+            <Card titulo="#12 - Contador Usando Classe" color="#DC143C">
+                <ContadorClasse numeroInicial={10}></ContadorClasse>
+            </Card>
+
 
             <Card titulo="#11 - Componente controlado (input)">
             <Input>
