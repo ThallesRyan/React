@@ -1,6 +1,6 @@
 @font-face {
   font-family: 'RobotoMono';
-  src: url('\fonts\RobotoMono-Thin.ttf');
+ src: url('./fonts/RobotoMono-Thin.ttf')
 }
 
 *{
@@ -9,6 +9,7 @@
 
 body{
   display: flex;
+  /*Ocupa a altura inteira da tela vh*/
   height: 100vh;
   justify-content: center;
   align-items: center;
