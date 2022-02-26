@@ -1,0 +1,23 @@
+.display{
+    background-color: yellowgreen;
+    outline: none;
+    border: none;
+    text-align: right;
+    color:white;
+
+    font-size: 2.0em;
+    grid-column-end:span 4;   
+
+}
+
+/*Remove as setas de aumentar e diminuir do input tipo number*/ /* Chrome, Safari, Edge, Opera */
+.display ::-webkit-outer-spin-button,
+.display::-webkit-inner-spin-button{
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+/* Para remover as setas no Firefox */
+input[type=number] {
+    -moz-appearance: textfield;
+  }
