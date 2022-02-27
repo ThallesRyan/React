@@ -8,29 +8,29 @@ import Display from '../components/Display'
 // componente de classe, pois irá usar estado...
 export default Calculator =>{
     
-       const [valores,setValores] = useState(0)
+       const [display,setDisplay] = useState(0)
        
     
         return(
             <div className='calculator'>
-                <Display tipo="text" valor = {valores} disabled= {true}/>
-                <Button label='AC'nomeClass="AC" setValores={setValores} valor={valores} ></Button>
-                <Button label="/" nomeClass="divisao"></Button>
-                <Button label="7" setValores={setValores} valor={valores}></Button>
-                <Button label="8" setValores={setValores} valor={valores}></Button>
-                <Button label="9" setValores={setValores} valor={valores}></Button>
-                <Button label="*" nomeClass="multiplicacao"></Button>
-                <Button label="4" setValores={setValores} valor={valores}></Button>
-                <Button label="5" setValores={setValores} valor={valores}></Button>
-                <Button label="6" setValores={setValores} valor={valores}></Button>
-                <Button label="-" nomeClass="subtracao"></Button>
-                <Button label="1" setValores={setValores} valor={valores}></Button>
-                <Button label="2" setValores={setValores} valor={valores}></Button>
-                <Button label="3" setValores={setValores} valor={valores}></Button>
-                <Button label="+" nomeClass="adicao"></Button>
-                <Button label="0" setValores={setValores} valor={valores}></Button>
-                <Button label="." nomeClass="ponto"></Button>
-                <Button label="=" nomeClass="igual"></Button>
+                <Display tipo="text" display = {display} disabled= {true}/>
+                <Button label='AC'nomeClass="AC" setDisplay={setDisplay} display={display} ></Button>
+                <Button label="/" nomeClass="divisao" setDisplay={setDisplay} display={display}></Button>
+                <Button label="7" setDisplay={setDisplay} display={display}></Button>
+                <Button label="8" setDisplay={setDisplay} display={display}></Button>
+                <Button label="9" setDisplay={setDisplay} display={display}></Button>
+                <Button label="*" nomeClass="multiplicacao" setDisplay={setDisplay} display={display}></Button>
+                <Button label="4" setDisplay={setDisplay} display={display}></Button>
+                <Button label="5" setDisplay={setDisplay} display={display}></Button>
+                <Button label="6" setDisplay={setDisplay} display={display}></Button>
+                <Button label="-" nomeClass="subtracao" setDisplay={setDisplay} display={display}></Button>
+                <Button label="1" setDisplay={setDisplay} display={display}></Button>
+                <Button label="2" setDisplay={setDisplay} display={display}></Button>
+                <Button label="3" setDisplay={setDisplay} display={display}></Button>
+                <Button label="+" nomeClass="adicao" setDisplay={setDisplay} display={display}></Button>
+                <Button label="0" setDisplay={setDisplay} display={display}></Button>
+                <Button label="." nomeClass="ponto" setDisplay={setDisplay} display={display}></Button>
+                <Button label="=" nomeClass="igual" setDisplay={setDisplay} display={display}></Button>
                
             </div>
         )
