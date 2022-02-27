@@ -11,8 +11,26 @@ const calc = (setDisplay) => {
         let resultado = parseFloat(valores[0]) + parseFloat(valores[1])
         setDisplay(resultado)
         valores = [0,0]
+    }else if(operacao == '-'){
+        p = 0
+        let resultado = parseFloat(valores[0]) - parseFloat(valores[1])
+        setDisplay(resultado)
+        valores = [0,0]
+        console.log(resultado)
+    }else if(operacao == '*'){
+        p = 0
+        let resultado = parseFloat(valores[0]) * parseFloat(valores[1])
+        setDisplay(resultado)
+        valores = [0,0]
+        console.log(resultado)
+    }else if(operacao == '/'){
+        p = 0
+        let resultado = parseFloat(valores[0]) / parseFloat(valores[1])
+        setDisplay(resultado)
+        valores = [0,0]
         console.log(resultado)
     }
+    
 }
 const limparDisplay = () => {}
 
