@@ -32,7 +32,7 @@ const calc = (setDisplay) => {
     }
     
 }
-const limparDisplay = () => {}
+const limparDisplay = (setDisplay) => {setDisplay(0)}
 
 export default (props) => {
     const handleClick = (e) =>{
@@ -44,7 +44,7 @@ export default (props) => {
 
         if(valor == "AC"){
             valores = [0,0]
-            props.setDisplay(0)
+            limparDisplay(props.setDisplay)
             
         }else if(valor == "/" || valor == '*' || valor == '+' || valor =='-' ){
             setOperacao(valor)
